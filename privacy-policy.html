@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="">
+<meta name="robots" content="index,follow,archive" />
+<link rel="icon" type="image/png" href="" sizes="16x16" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="" />
+<title>Sell Your iPhone for the Most Cash | Dollars4Devices.com</title>
+<meta name="description" content="Sell your iPhone to Dollars4Devices.com for the Most Cash. Instant Quote. Free Shipping. Top Rated Service." />
+<meta name="keywords" content="sell your iphone, sell my iphone, sell iphone" />
+
+<link rel='stylesheet' type='text/css' href="./src/index.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+<style>.async-hide { opacity: 0 !important} </style>
+</head>
+<body class=" 1column">
+<section id="Dollars4Devices" ng-app="Dollars4Devices">
+<nav class="top-nav" role="navigation">
+<div class="row">
+<a href="https://www.Dollars4Devices.com" class="logo">
+<img src="" alt="Dollars4Devices logo">
+</a>
+<div class="hamburger show-for-medium-down">
+<i class="fi-list"></i>
+</div>
+<ul class="links show-for-large-up">
+<li class="trade-in">
+<a href="sell.html">Start Selling</a>
+<ul>
+<li>
+<a href="./sell/iphone.html" class='category-link'>
+Sell iPhone
+</a>
+</li>
+<li>
+<a href="./sell/samsung.html" class='category-link'>
+Sell Samsung
+</a>
+</li>
+<li>
+<a href="./sell/apple-watch.html" class='category-link'>
+Sell Apple Watch
+</a>
+</li>
+<li>
+<a href="./sell/macbook.html" class='category-link'>
+Sell MacBook
+</a>
+</li>
+<li>
+<a href="./sell/ipad.html" class='category-link'>
+Sell iPad
+</a>
+</li>
+<li>
+<a href="./sell/lg.html" class='category-link'>
+Sell LG
+</a>
+</li>
+<li>
+<a href="./sell/mac-mini.html" class='category-link'>
+Sell Mac Mini
+</a>
+</li>
+<li>
+<a href="./sell/htc.html" class='category-link'>
+Sell HTC
+</a>
+</li>
+<li>
+<a href="./sell/imac.html" class='category-link'>
+Sell iMac
+</a>
+</li>
+<li>
+<a href="" class='category-link'>
+Sell Mac Pro
+</a>
+</li>
+<li>
+<a href="" class='category-link'>
+Sell Surface Studio
+</a>
+</li>
+<li>
+<a href="./sell/surface.html" class='category-link'>
+Sell Surface
+</a>
+</li>
+</ul>
+</li>
+<li><a href="./support.html">Support</a></li>
+<li class="login">
+<a href="https://www.itsworthmore.com/account/login" class="show-login-modal">
+<span>Login</span>
+</a>
+</li>
+<li class='cart'>
+<a href="https://www.itsworthmore.com/sell/box">
+<div class="box">
+<span>
+0
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.84 30.09"><defs><style>.box-icon-class{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.84px;}</style></defs><title>box-icon</title><rect class="box-icon-class" x="0.92" y="0.92" width="32" height="6.98" rx="1.75" ry="1.75" /><rect class="box-icon-class" x="2.92" y="7.9" width="28" height="21.26" rx="1.75" ry="1.75" /></svg>
+</div>
+My Box
+<div class="hide-for-large-up">
+( 0 )
+</div>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id="login-modal" class="reveal-modal medium" data-reveal aria-hidden="true" role="dialog" style="display: none;">
+<h4 style='font-size: 1.7rem' class="text-center">Account Login</h4>
+<div class="login-form" ng-controller='login-form-ctrl' ng-class="{ 'is-loading' : formDisabled }" ng-init="init()" ng-cloak>
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row">
+<div class="small-12 columns">
+<small class="error" ng-show="errors.generic.length" ng-cloak>
+{{ errors.generic[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Email Address
+<input type="email" ng-model="email" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.email.length" ng-cloak>
+{{ errors.email[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Password
+<input type="password" ng-model="password" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password.length" ng-cloak>
+{{ errors.password[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="small-12 columns">
+<label>
+Confirm Password
+<input type="password" ng-model="password_confirmation" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password_confirmation.length" ng-cloak>
+{{ errors.password_confirmation[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="columns small-12">
+<div vc-recaptcha key="'6LfUvjcUAAAAAGGWnojdvzU_OC2tL5681-HONvcN'" ng-model="recaptcha" on-create="recaptchaWidgetId = widgetId"></div>
+<br>
+<small class="error" ng-show="errors.recaptcha.length" ng-cloak>
+{{ errors.recaptcha[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<p>
+<button ng-click="postLogin()" type="button" class="small success submnit-btn">
+{{ createAccount ? 'Create Account' : 'Login' }}
+</button>
+<span>or
+<a href="#" class="create-acc-toggle" ng-click="createAccount = !createAccount; $event.preventDefault()">
+{{ !createAccount ? 'create an account' : 'login to an existing account' }}
+</a>
+</span>
+<br>
+<a href="https://www.itsworthmore.com/account/forgot-password" class="forgot">
+Forgot Your Password?
+</a>
+</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="columns small-12">
+<p class="font-size-0-9">
+Or, login with:
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/google" class="primary-color">
+<i class="fi-social-google-plus"></i>&nbsp; Google
+</a>
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/facebook" class="primary-color">
+<i class="fi-social-facebook"></i>&nbsp; Facebook
+ </a>
+</p>
+</div>
+</div>
+</div>
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div class="row">
+<div class="columns small-12">
+</div>
+</div>
+<h1 class="main-header">Privacy Policy</h1>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="row">
+<div class="columns main large-offset-2 large-8 medium-offset-1 medium-10 small-12 end">
+<p>We understand that your privacy is very important to you and we want you to know that it is just as important to us. In line with our efforts to maintain a long term relationship with our customers, we realize that along with trust comes protecting your privacy. Please note that when engaging in business with us you provide us with two types of information: Personal information that can be used to Identify you and Non-personal information that cannot be used to identify who you are.</p>
+<p>Revamping your Devices:</p>
+<p>Once you have submitted your electronic device(s) to us, we clear out all the personal data to the point where you yourself will not be able to identify your once beloved gadget.</p>
+<p>Your computer will be wiped out of all data and then set back to the factory default settings.</p>
+<p>All smartphones will be wiped via the software based solutions.</p>
+<p>For iPods and other mp3 players we will make sure all personal information including photos and contacts are wiped out and then reset the device back to factory default settings.</p>
+<p>Your Personal Information:</p>
+<p>You have the ability to browse around our website without giving us any sort of personal information. To engage in business with us, the information that we collect consists of the information you give us in order to create your ItsWorthMore.com account. This information includes but is not limited to your name, address, and email address. Any and all information that we collect from you will be solely used for you and ItsWorthMore.com to conduct the business you have chosen to engage in. If you do sign up to receive e-mails from us, ItsWorthMore.com will be the only party with the rights to email you. If you do not choose to sign up for our emails, the only emails you will get from us will be in regards to your order and information about that transaction. If you choose to sign up with your Facebook account, we will use the information there solely to help speed up the process for the services we provide. In other words, we are not going to give out your information to any third parties without your consent for any reason whatsoever; Not even if they bribe us. Please be aware that this third parties group does not include the assigned third parties who assist in the operation of these services provided they too keep all personal information confidential. Lastly, we may release your information for law compliance, to protect ourselves and customers, and if you do not comply with ItsWorthMore.com policies.</p>
+<p>Preventative measures are taken to secure your personal information. All personal information will be transmitted in a secure manner. Only those with the necessary authorizations will be granted access to this information and as a part of their contract with ItsWorthMore.com, are required to keep all this information confidential.</p>
+<p>Cookies policy (not the chocolate chip kind):</p>
+<p>Please be aware that we do use cookies to make our process as efficient as possible. By enabling cookies we can analyze our website data in an effort to improve the experience every time you come to our site. The information that we use here is once again Non-personal information and will not be used to identify you. Non-the-less, please be aware that if we do use the assistance of third parties to help improve our site, no personal information will not be accessible to them. The information that they have access to is only for the sole purpose of the betterment of our website. An example of this would be decreasing the number of clicks necessary to get to a popular item our customers like to sell to us.</p>
+<p>You have the ability to reset your browser in such a way that you will no longer receive cookies or to indicate to you when a cookie is being sent but remember that we use these cookies so that you have the ability to use our website to its highest potential. This potential includes but is not limited to displaying your personal preferences and displaying the most appropriate advertisements based on the products you choose to sell to us.</p>
+<p>Third Parties:</p>
+<p>At times we may allow other parties to host their products and/or services on our website. These third parties have their own terms and conditions as well as privacy policies. These companies may you the non-personal information that we have to target the appropriate audience for their ads. If you do decide to engage in business with them, ItsWorthMore.com claims no responsibility or liability on their part.</p>
+<p>Compliance to Laws:</p>
+<p>1) California Online Privacy Protection Act: Rest assured that we do comply with this privacy act and thus will not distribute any of your information to an outside party without your consent.</p>
+<p>2) Childrens Online Privacy Protection Act: We are in compliance with the requirements of this litigation as well and WILL NOT collect any information from someone under the age of 13. The contents of this website are directed to those 13 years of age and older.</p>
+<p>For questions about our Terms and Conditions, please visit that section of our website.</p>
+<p>Please be aware that by engaging in business with us and using our services, you have consented to our privacy policy.</p>
+<p>Any changes that are made to this policy will be updated. The date below signifies the last update on our Privacy Policy.</p>
+<p>This policy was last modified on May 2012</p>
+<p>If you have any further question, comments, or concerns, please feel free to contact us.</p>
+</div>
+</div>
+<footer class="footer">
+<div class="row">
+<div class="small-12 medium-4 large-2 columns customer-service">
+<h6>Customer Service</h6>
+<ul>
+<li><span>1 (512) 730-0053</span></li>
+<li><a href="./support.html">Support &amp; FAQ</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-2 columns about-us">
+<h6>About Us</h6>
+<ul>
+<li><a href="./about.html">About</a></li>
+<li><a href="./blog.html">Blog</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-3 columns connect-with-us">
+<h6>Connect With Us</h6>
+<ul>
+<li>
+<a href="https://www.instagram.com/" target="_blank" rel="noopener" lazy-class="insta" class="social lazy">Instagram</a>
+</li>
+<li>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener" lazy-class="fb" class="social lazy">Facebook</a>
+</li>
+<li>
+<a href="https://www.youtube.com/" target="_blank" rel="noopener" lazy-class="yt" class="social lazy">Youtube</a>
+</li>
+<li>
+<a href="https://twitter.com/" target="_blank" rel="noopener" lazy-class="twit" class="social lazy">Twitter</a>
+</li>
+</ul>
+</div>
+<div class="clear show-for-medium-only"></div>
+<div class="small-12 medium-8 medium-offset-2 large-5 large-offset-0 columns subscribe">
+<h6 class='hide-for-medium-only'>Subscribe</h6>
+<div class="form-wrap">
+<form method="POST" action="https://www.itsworthmore.com/widget/newsletter/subscribe" class="widget newsletter">
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row collapse">
+<div class="small-8 medium-10 columns">
+<input type="email" name="email" placeholder="Enter your email">
+</div>
+<div class="small-4 medium-2 columns">
+<input class="button postfix success" value="Go" type="submit">
+</div>
+</div>
+<span class="label success"></span>
+<div class="clear"></div>
+<span class="label alert"></span>
+<div class="clear"></div>
+<span>Sign up to receive news, tips, and offers.</span>
+</form>
+<hr>
+<a href="https://app.termly.io/document/privacy-policy/a1d3d675-cd26-44ef-8b29-180254b78336">Privacy Policy</a>
+<span class='spacer'>|</span>
+<a href="./terms-and-conditions.html">Terms and Conditions</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="bottom">
+<div class="row">
+<div class="column small-12 medium-9">
+<p class="no-margin">
+&copy; 2019 Dollars4Devices.com &mdash; All Rights Reserved
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="./src/foundation.js"></script>
+<script>
+    
+    var baseUrl = 'https://www.Dollars4Devices.com';
+
+    
+    </script>
+</section>
+</body>

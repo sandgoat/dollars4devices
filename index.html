@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="">
+<meta name="robots" content="index,follow,archive" />
+<link rel="icon" type="image/png" href="" sizes="16x16" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="" />
+<title>Sell Your iPhone for the Most Cash | Dollars4Devices.com</title>
+<meta name="description" content="Sell your iPhone to Dollars4Devices.com for the Most Cash. Instant Quote. Free Shipping. Top Rated Service." />
+<meta name="keywords" content="sell your iphone, sell my iphone, sell iphone" />
+
+<link rel='stylesheet' type='text/css' href="./src/index.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+<style>.async-hide { opacity: 0 !important} </style>
+</head>
+<body class=" 1column">
+<section id="Dollars4Devices" ng-app="Dollars4Devices">
+<nav class="top-nav" role="navigation">
+<div class="row">
+<a href="https://www.Dollars4Devices.com" class="logo">
+<img src="" alt="Dollars4Devices logo">
+</a>
+<div class="hamburger show-for-medium-down">
+<i class="fi-list"></i>
+</div>
+<ul class="links show-for-large-up">
+<li class="trade-in">
+<a href="sell.html">Start Selling</a>
+<ul>
+<li>
+<a href="./sell/iphone.html" class='category-link'>
+Sell iPhone
+</a>
+</li>
+<li>
+<a href="./sell/samsung.html" class='category-link'>
+Sell Samsung
+</a>
+</li>
+<li>
+<a href="./sell/apple-watch.html" class='category-link'>
+Sell Apple Watch
+</a>
+</li>
+<li>
+<a href="./sell/macbook.html" class='category-link'>
+Sell MacBook
+</a>
+</li>
+<li>
+<a href="./sell/ipad.html" class='category-link'>
+Sell iPad
+</a>
+</li>
+<li>
+<a href="./sell/lg.html" class='category-link'>
+Sell LG
+</a>
+</li>
+<li>
+<a href="./sell/mac-mini.html" class='category-link'>
+Sell Mac Mini
+</a>
+</li>
+<li>
+<a href="./sell/htc.html" class='category-link'>
+Sell HTC
+</a>
+</li>
+<li>
+<a href="./sell/imac.html" class='category-link'>
+Sell iMac
+</a>
+</li>
+<li>
+<a href="" class='category-link'>
+Sell Mac Pro
+</a>
+</li>
+<li>
+<a href="" class='category-link'>
+Sell Surface Studio
+</a>
+</li>
+<li>
+<a href="./sell/surface.html" class='category-link'>
+Sell Surface
+</a>
+</li>
+</ul>
+</li>
+<li><a href="./support.html">Support</a></li>
+<li class="login">
+<a href="https://www.itsworthmore.com/account/login" class="show-login-modal">
+<span>Login</span>
+</a>
+</li>
+<li class='cart'>
+<a href="https://www.itsworthmore.com/sell/box">
+<div class="box">
+<span>
+0
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.84 30.09"><defs><style>.box-icon-class{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.84px;}</style></defs><title>box-icon</title><rect class="box-icon-class" x="0.92" y="0.92" width="32" height="6.98" rx="1.75" ry="1.75" /><rect class="box-icon-class" x="2.92" y="7.9" width="28" height="21.26" rx="1.75" ry="1.75" /></svg>
+</div>
+My Box
+<div class="hide-for-large-up">
+( 0 )
+</div>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id="login-modal" class="reveal-modal medium" data-reveal aria-hidden="true" role="dialog" style="display: none;">
+<h4 style='font-size: 1.7rem' class="text-center">Account Login</h4>
+<div class="login-form" ng-controller='login-form-ctrl' ng-class="{ 'is-loading' : formDisabled }" ng-init="init()" ng-cloak>
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row">
+<div class="small-12 columns">
+<small class="error" ng-show="errors.generic.length" ng-cloak>
+{{ errors.generic[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Email Address
+<input type="email" ng-model="email" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.email.length" ng-cloak>
+{{ errors.email[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Password
+<input type="password" ng-model="password" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password.length" ng-cloak>
+{{ errors.password[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="small-12 columns">
+<label>
+Confirm Password
+<input type="password" ng-model="password_confirmation" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password_confirmation.length" ng-cloak>
+{{ errors.password_confirmation[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="columns small-12">
+<!-- <div vc-recaptcha key="''" ng-model="recaptcha" on-create="recaptchaWidgetId = widgetId"></div>
+<br>
+<small class="error" ng-show="errors.recaptcha.length" ng-cloak>
+{{ errors.recaptcha[0] }}
+</small> -->
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<p>
+<button ng-click="postLogin()" type="button" class="small success submnit-btn">
+{{ createAccount ? 'Create Account' : 'Login' }}
+</button>
+<span>or
+<a href="#" class="create-acc-toggle" ng-click="createAccount = !createAccount; $event.preventDefault()">
+{{ !createAccount ? 'create an account' : 'login to an existing account' }}
+</a>
+</span>
+ <br>
+<a href="https://www.itsworthmore.com/account/forgot-password" class="forgot">
+Forgot Your Password?
+</a>
+</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="columns small-12">
+<p class="font-size-0-9">
+Or, login with:
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/google" class="primary-color">
+<i class="fi-social-google-plus"></i>&nbsp; Google
+</a>
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/facebook" class="primary-color">
+<i class="fi-social-facebook"></i>&nbsp; Facebook
+</a>
+</p>
+</div>
+</div>
+</div>
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div class="row ">
+<div class="columns small-12">
+</div>
+</div>
+<section class="hero">
+<div class="row">
+<div class="columns small-12">
+<div class="top-pad">&nbsp;</div>
+<h1 class="wow fadeIn">
+<strong>Trade-in
+<br class="show-for-small-only">your used
+<br class="show-for-medium-up"> electronics</strong>
+<br class="show-for-small-only"><em>for</em>
+<span>cash</span>
+</h1>
+<h2 class="wow fadeIn" data-wow-delay="0.1s">
+We offer a simpler, safer<br class="show-for-small-only">
+way to sell<br class="show-for-medium-only">
+your old phone,<br class="show-for-small-only">
+tablet, or laptop
+</h2>
+<a href="./sell.html" class="button success shadow wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="0.8s">
+Get a Quote
+</a>
+<a href="#" class='down wow fadeInDown' id='down' data-wow-delay="0.9s" data-wow-duration="1s">&nbsp;</a>
+<div class="bot-pad">&nbsp;</div>
+</div>
+</div>
+</section>
+<section class="widget three-steps home">
+<div class="row">
+<div class="columns small-12">
+<h3 class='get-cash'>Get <strong>Cash</strong> in Three<br class="show-for-small-only"> Simple Steps</h3>
+<ul class="small-block-grid-1 medium-block-grid-3" data-equalizer>
+<li>
+<div class="img">
+</div>
+<h3><strong>1.</strong> Get an Instant Quote</h3>
+<p>Find your used electronics and get an instant quote based on the condition.</p>
+</li>
+<li>
+<div class="img">
+</div>
+<h3><strong>2.</strong> Ship For Free</h3>
+<p>We provide you with a free, trackable pre-paid shipping label for sending us your item(s).</p>
+</li>
+<li>
+<div class="img">
+</div>
+<h3><strong>3.</strong> Get Cash Fast</h3>
+<p>Once we inspect your item(s) we'll pay you within 2 days, we promise.</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="widget light-grey sell home">
+<div class="row">
+<div class="columns small-12">
+<h2>Start Selling</h2>
+<p>Find the product you'd like<br class="show-for-small-only"> to trade-in for cash</p>
+<div class="widget search-form">
+<input id="product-search-field" placeholder="Search for your device here..." />
+<span class="no-results">
+&nbsp;<span class="msg">- No products found -</span>&nbsp;
+</span>
+<div class="clear"></div>
+</div>
+<div class="center-wiget" col align="center">
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
+<li class="lg-b      md-b      sm-b same-height">
+<a href="./sell/iphone.html" class='category-link'>
+<h4>iPhone</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b sm-l same-height">
+<a href="./sell/samsung.html" class='category-link'>
+<h4>Samsung</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b same-height">
+<a href="./sell/apple-watch.html" class='category-link'>
+<h4>Apple Watch</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b sm-l same-height">
+<a href="./sell/macbook.html" class='category-link'>
+<h4>MacBook</h4>
+</a>
+</li>
+<li class="lg-b      md-b      sm-b same-height">
+<a href="./sell/ipad.html" class='category-link'>
+ <h4>iPad</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b sm-l same-height">
+<a href="./sell/htc.html" class='category-link'>
+<h4>HTC</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b same-height">
+ <a href="./sell/mac-mini.html" class='category-link'>
+<h4>Mac Mini</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b sm-l same-height">
+<a href="https://www.itsworthmore.com/sell/laptop" class='category-link'>
+<h4>Laptop</h4>
+</a>
+</li>
+<li class="lg-b      md-b      sm-b same-height">
+<a href="./sell/imac.html" class='category-link'>
+<h4>iMac</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b sm-l same-height">
+<a href="https://www.itsworthmore.com/sell/mac-pro" class='category-link'>
+<h4>Mac Pro</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b same-height">
+<a href="https://www.itsworthmore.com/sell/surface-studio" class='category-link'>
+<h4>Surface Studio</h4>
+</a>
+</li>
+<li class="lg-b lg-l md-b md-l sm-b sm-l same-height">
+<a href="./sell/surface.html" class='category-link'>
+<h4>Surface</h4>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<div class="clear"></div>
+<footer class="footer">
+<div class="row">
+<div class="small-12 medium-4 large-2 columns customer-service">
+<h6>Customer Service</h6>
+<ul>
+<li><span>1 (512) 730-0053</span></li>
+<li><a href="./support.html">Support &amp; FAQ</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-2 columns about-us">
+<h6>About Us</h6>
+<ul>
+<li><a href="./about.html">About</a></li>
+<li><a href="./blog.html">Blog</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-3 columns connect-with-us">
+<h6>Connect With Us</h6>
+<ul>
+<li>
+<a href="https://www.instagram.com/" target="_blank" rel="noopener" lazy-class="insta" class="social lazy">Instagram</a>
+</li>
+<li>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener" lazy-class="fb" class="social lazy">Facebook</a>
+</li>
+<li>
+<a href="https://www.youtube.com/" target="_blank" rel="noopener" lazy-class="yt" class="social lazy">Youtube</a>
+</li>
+<li>
+<a href="https://twitter.com/" target="_blank" rel="noopener" lazy-class="twit" class="social lazy">Twitter</a>
+</li>
+</ul>
+</div>
+<div class="clear show-for-medium-only"></div>
+<div class="small-12 medium-8 medium-offset-2 large-5 large-offset-0 columns subscribe">
+<h6 class='hide-for-medium-only'>Subscribe</h6>
+<div class="form-wrap">
+<form method="POST" action="https://www.itsworthmore.com/widget/newsletter/subscribe" class="widget newsletter">
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row collapse">
+<div class="small-8 medium-10 columns">
+<input type="email" name="email" placeholder="Enter your email">
+</div>
+<div class="small-4 medium-2 columns">
+<input class="button postfix success" value="Go" type="submit">
+</div>
+</div>
+<span class="label success"></span>
+<div class="clear"></div>
+<span class="label alert"></span>
+<div class="clear"></div>
+<span>Sign up to receive news, tips, and offers.</span>
+</form>
+<hr>
+<a href="https://app.termly.io/document/privacy-policy/a1d3d675-cd26-44ef-8b29-180254b78336">Privacy Policy</a>
+<span class='spacer'>|</span>
+<a href="./terms-and-conditions.html">Terms and Conditions</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="bottom">
+<div class="row">
+<div class="column small-12 medium-9">
+<p class="no-margin">
+&copy; 2019 Dollars4Devices.com &mdash; All Rights Reserved
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="./src/foundation.js"></script>
+<script>
+    
+    var baseUrl = 'https://www.Dollars4Devices.com';
+
+    
+    </script>
+</section>
+</body>

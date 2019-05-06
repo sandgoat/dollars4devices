@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="">
+<meta name="robots" content="index,follow,archive" />
+<link rel="icon" type="image/png" href="" sizes="16x16" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="" />
+<title>Sell Your iPhone for the Most Cash | Dollars4Devices.com</title>
+<meta name="description" content="Sell your iPhone to Dollars4Devices.com for the Most Cash. Instant Quote. Free Shipping. Top Rated Service." />
+<meta name="keywords" content="sell your iphone, sell my iphone, sell iphone" />
+
+<link rel='stylesheet' type='text/css' href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+<style>.async-hide { opacity: 0 !important} </style>
+</head>
+<body class=" 1column">
+<section id="Dollars4Devices" ng-app="Dollars4Devices">
+<nav class="top-nav" role="navigation">
+<div class="row">
+<a href="https://www.Dollars4Devices.com" class="logo">
+<img src="https://www.itsworthmore.com/static/svg/iwm-logo-white.svg" alt="ItsWorthMore logo">
+</a>
+<div class="hamburger show-for-medium-down">
+<i class="fi-list"></i>
+</div>
+<ul class="links show-for-large-up">
+<li class="trade-in">
+<a href="https://www.itsworthmore.com/sell">Start Selling</a>
+<ul>
+<li>
+<a href="https://www.itsworthmore.com/sell/iphone" class='category-link'>
+Sell iPhone
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/samsung" class='category-link'>
+Sell Samsung
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/apple-watch" class='category-link'>
+Sell Apple Watch
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook" class='category-link'>
+Sell MacBook
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/ipad" class='category-link'>
+Sell iPad
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/android" class='category-link'>
+Sell Android
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/mac-mini" class='category-link'>
+Sell Mac Mini
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/laptop" class='category-link'>
+Sell Laptop
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/imac" class='category-link'>
+Sell iMac
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/mac-pro" class='category-link'>
+Sell Mac Pro
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/surface-studio" class='category-link'>
+Sell Surface Studio
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/surface" class='category-link'>
+Sell Surface
+</a>
+</li>
+</ul>
+</li>
+<li><a href="https://www.itsworthmore.com/bulk-trade-in">Bulk Trade-In</a></li>
+<li><a href="https://buy.itsworthmore.com">Buy Certified Used</a></li>
+<li><a href="https://www.itsworthmore.com/support">Support</a></li>
+<li class="login">
+<a href="https://www.itsworthmore.com/account/login" class="show-login-modal">
+<span>Login</span>
+</a>
+</li>
+<li class='cart'>
+<a href="https://www.itsworthmore.com/sell/box">
+<div class="box">
+<span>
+0
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.84 30.09"><defs><style>.box-icon-class{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.84px;}</style></defs><title>box-icon</title><rect class="box-icon-class" x="0.92" y="0.92" width="32" height="6.98" rx="1.75" ry="1.75" /><rect class="box-icon-class" x="2.92" y="7.9" width="28" height="21.26" rx="1.75" ry="1.75" /></svg>
+</div>
+My Box
+<div class="hide-for-large-up">
+( 0 )
+</div>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id="login-modal" class="reveal-modal medium" data-reveal aria-hidden="true" role="dialog" style="display: none;">
+<h4 style='font-size: 1.7rem' class="text-center">Account Login</h4>
+<div class="login-form" ng-controller='login-form-ctrl' ng-class="{ 'is-loading' : formDisabled }" ng-init="init()" ng-cloak>
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row">
+<div class="small-12 columns">
+<small class="error" ng-show="errors.generic.length" ng-cloak>
+{{ errors.generic[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Email Address
+<input type="email" ng-model="email" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.email.length" ng-cloak>
+{{ errors.email[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Password
+<input type="password" ng-model="password" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password.length" ng-cloak>
+{{ errors.password[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="small-12 columns">
+<label>
+Confirm Password
+<input type="password" ng-model="password_confirmation" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password_confirmation.length" ng-cloak>
+{{ errors.password_confirmation[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="columns small-12">
+<div vc-recaptcha key="'6LfUvjcUAAAAAGGWnojdvzU_OC2tL5681-HONvcN'" ng-model="recaptcha" on-create="recaptchaWidgetId = widgetId"></div>
+<br>
+<small class="error" ng-show="errors.recaptcha.length" ng-cloak>
+{{ errors.recaptcha[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<p>
+<button ng-click="postLogin()" type="button" class="small success submnit-btn">
+{{ createAccount ? 'Create Account' : 'Login' }}
+</button>
+<span>or
+<a href="#" class="create-acc-toggle" ng-click="createAccount = !createAccount; $event.preventDefault()">
+{{ !createAccount ? 'create an account' : 'login to an existing account' }}
+</a>
+</span>
+<br>
+<a href="https://www.itsworthmore.com/account/forgot-password" class="forgot">
+Forgot Your Password?
+</a>
+</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="columns small-12">
+<p class="font-size-0-9">
+Or, login with:
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/google" class="primary-color">
+<i class="fi-social-google-plus"></i>&nbsp; Google
+</a>
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/facebook" class="primary-color">
+<i class="fi-social-facebook"></i>&nbsp; Facebook
+</a>
+</p>
+</div>
+</div>
+</div>
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div class="row ">
+<div class="columns small-12">
+</div>
+</div>
+<section class="sell-category-view heading">
+<div class="row">
+<div class="columns small-12 text-center">
+<h1 class="no-margin">
+Sell your <strong>MacBook</strong>
+</h1>
+<small class='text-center'>
+<a href="https://www.itsworthmore.com/sell">
+Looking to sell a different device? Click here!
+</a>
+</small>
+<br>
+</div>
+</div>
+</section>
+<section class="sell-category-view grid light-grey">
+<div class="row grey">
+<div class="columns small-12 text-center">
+<h2>Select your MacBook model to sell</h2>
+<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-3">
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook-12" class="box">
+<picture>
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2872662524-macbook-12.jpg.webp" type="image/webp">
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2872662524-macbook-12.jpg" type="image/jpeg">
+<img src="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2872662524-macbook-12.jpg" alt="MacBook (2015 - Present) photo" class="">
+</picture>
+<br>
+MacBook (2015 - Present)
+<br>
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook-air" class="box">
+<picture>
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2754127017-macbook-air.png.webp" type="image/webp">
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2754127017-macbook-air.png" type="image/png">
+<img src="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2754127017-macbook-air.png" alt="MacBook Air (2009 - Present) photo" class="">
+</picture>
+<br>
+MacBook Air (2009 - Present)
+<br>
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook-pro-no-touch-bar" class="box">
+<picture>
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2574789952-macbook-pro-no-touch-bar.png.webp" type="image/webp">
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2574789952-macbook-pro-no-touch-bar.png" type="image/png">
+<img src="https://www.itsworthmore.com/media/cache/opt-resize/300x300/2574789952-macbook-pro-no-touch-bar.png" alt="MacBook Pro - No Touch Bar (2016 - Present) photo" class="">
+</picture>
+<br>
+MacBook Pro - No Touch Bar (2016 - Present)
+<br>
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook-pro-retina" class="box">
+<picture>
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/355362937-macbook-pro-retina.png.webp" type="image/webp">
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/355362937-macbook-pro-retina.png" type="image/png">
+<img src="https://www.itsworthmore.com/media/cache/opt-resize/300x300/355362937-macbook-pro-retina.png" alt="MacBook Pro - Retina (2012 - 2015) photo" class="">
+</picture>
+<br>
+MacBook Pro - Retina (2012 - 2015)
+<br>
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook-pro-touch-bar" class="box">
+<picture>
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/1251225247-macbook-pro-touch-bar.png.webp" type="image/webp">
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/1251225247-macbook-pro-touch-bar.png" type="image/png">
+<img src="https://www.itsworthmore.com/media/cache/opt-resize/300x300/1251225247-macbook-pro-touch-bar.png" alt="MacBook Pro - Touch Bar (2016 - Present) photo" class="">
+</picture>
+<br>
+MacBook Pro - Touch Bar (2016 - Present)
+<br>
+</a>
+</li>
+<li>
+<a href="https://www.itsworthmore.com/sell/macbook-pro" class="box">
+<picture>
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/4271246564-macbook-pro.jpg.webp" type="image/webp">
+<source srcset="https://www.itsworthmore.com/media/cache/opt-resize/300x300/4271246564-macbook-pro.jpg" type="image/jpeg">
+<img src="https://www.itsworthmore.com/media/cache/opt-resize/300x300/4271246564-macbook-pro.jpg" alt="MacBook Pro - Unibody (2009 - 2012) photo" class="">
+</picture>
+<br>
+MacBook Pro - Unibody (2009 - 2012)
+<br>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="widget faq-block ">
+<div class="row">
+<div class="columns small-12">
+<div class="text-center">
+<h3>FAQs</h3>
+</div>
+</div>
+<div class="columns small-12">
+<div class="block-wrap" ng-init="showFaq = []">
+<div class="block" ng-class="{ 'opened' : showFaq[0] }">
+<div class="question" ng-click="showFaq[0] = !!!showFaq[0]">
+ <span>&rsaquo;</span>
+How do I identify my MacBook model?
+</div>
+<div class="answer">
+<div class="answer-wrap">
+<p>It's important to get your MacBook model correct prior to selling it as prices between different MacBook models can very significantly. </p>
+<p>Your MacBook model information can be found by doing the following:</p>
+<ol>
+<li>Choose About This Mac from the Apple () menu in the upper-left of your screen.</li>
+<li>Click on "More Info..."</li>
+<li>You should now see some information about your laptop, including the model year.</li>
+</ol>
+<p>If you couldn't find your model information by following the above steps, we recommend following the steps above again and noting down your serial number. As an alternative, the serial number can be found on the back of the MacBook or on the original packaging. You can then visit the <a href="https://checkcoverage.apple.com" title="Apple Check Coverage" target="_blank">Apple Check Coverage</a> website, log in with your Apple ID and input your serial number. The model information should appear on the page. </p>
+<p>Another alternative is to paste the serial number on the EveryMac.com's <a href="https://everymac.com/ultimate-mac-lookup/" title="Ultimate Mac Lookup" target="_blank">Ultimate Mac Lookup</a> page.</p>
+</div>
+</div>
+</div>
+<div class="block" ng-class="{ 'opened' : showFaq[1] }">
+<div class="question" ng-click="showFaq[1] = !!!showFaq[1]">
+<span>&rsaquo;</span>
+What&#039;s the best way to sell a MacBook for cash?
+</div>
+<div class="answer">
+<div class="answer-wrap">
+<p>It depends. There's no one right answer. However, MacBooks hold their value very well and if you're an experienced seller on eBay or Craigslist, you will likely get the highest value for your MacBook on those platforms. However, they do require more effort from the seller, charge fees, and come with risk of fraud that novice sellers may not know how to protect themselves from.</p>
+<p>For those customers, we recommend using a trade-in site such as ItsWorthMore. Trade-in websites leverage their volume discounts and industry know-how to provide a smooth streamlined experience; for a slightly lower payout.</p>
+<p>Another alternative is to trade-in your MacBook directly with your big-box retailers or with Apple. These typically offer lowest payouts and often come in a form of a gift card. </p>
+<p>Some older MacBooks especially non-functional ones, do not have much of a resale value and you can choose to recycle them. Recycling in a environmentally friendly manner helps keep toxic pollutants, such as lead, out of the environment.</p>
+</div>
+</div>
+</div>
+<div class="block" ng-class="{ 'opened' : showFaq[2] }">
+<div class="question" ng-click="showFaq[2] = !!!showFaq[2]">
+<span>&rsaquo;</span>
+When&#039;s the best time to sell my MacBook?
+</div>
+<div class="answer">
+<div class="answer-wrap">
+<p>The best time to sell your MacBook is usually as soon as you can. Trade-in prices for MacBooks rarely trend up so it's best to prepare your MacBook for sale as soon as you've received your replacement and transferred over all your data.
+<p>If you're looking to get the latest MacBook right when it's released, the best time to trade-in or lock-in an offer would be right before the announcement.</p>
+</div>
+</div>
+</div>
+<div class="block" ng-class="{ 'opened' : showFaq[3] }">
+<div class="question" ng-click="showFaq[3] = !!!showFaq[3]">
+<span>&rsaquo;</span>
+How should I prepare my MacBook for sale?
+</div>
+<div class="answer">
+<div class="answer-wrap">
+<p>Apple has a very handy step-by-step guide on <a href="https://support.apple.com/en-us/HT201065" title="Apple Check Coverage" target="_blank">What to do to before you sell or trade-in your Mac</a> you can reference to ensure you've taken all the necessary steps to prepare your MacBook.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<hr>
+<section class="widget why-use-us ">
+<div class="row">
+<div class="columns small-12">
+<div class="heading">
+<h3>Why use us?</h3>
+<p>
+Lots of choices out there.
+<br class="show-for-medium-down">
+Here are a few reasons you will love us.
+</p>
+</div>
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 same-height-watch">
+<li class="lg-b md-r md-b">
+<div class="border-box same-height">
+<div class="img lazy" background-src="https://www.itsworthmore.com/media/cache/opt/2467575568-stars.png"></div>
+<h5>1000+ 5 Star Ratings</h5>
+<p class="hide-for-small-only">Just read the reviews &mdash; our customers love us.</p>
+</div>
+</li>
+<li class="lg-b lg-l lg-r md-b">
+<div class="border-box same-height">
+<div class="img lazy" background-src="https://www.itsworthmore.com/media/cache/opt/3117360316-bbb.png"></div>
+<h5>A+ With the BBB</h5>
+<p class="hide-for-small-only">A+ rating with the Better Business Bureaus.</p>
+</div>
+</li>
+<li class="lg-b md-r md-b">
+<div class="border-box same-height">
+<div class="img fast-money lazy" background-src="https://www.itsworthmore.com/media/cache/opt/2838824862-fast-money.png"></div>
+<h5>We Pay Fast!</h5>
+<p class="hide-for-small-only">Assured payments within 2 days.</p>
+</div>
+</li>
+<li class="md-b">
+<div class="border-box same-height">
+<div class="img lazy" background-src="https://www.itsworthmore.com/media/cache/opt/780326340-news.png"></div>
+<h5>As Seen On</h5>
+<p class="hide-for-small-only">We're getting great recognition in the news.</p>
+</div>
+</li>
+<li class="lg-l lg-r md-r">
+<div class="border-box same-height">
+<div class="img lazy" background-src="https://www.itsworthmore.com/media/cache/opt/2719035467-higher-offer.png"></div>
+<h5>Higher Offer</h5>
+<p class="hide-for-small-only">Our offer is higher than our competitors.</p>
+</div>
+</li>
+<li>
+<div class="border-box same-height">
+<div class="img lazy" background-src="https://www.itsworthmore.com/media/cache/opt/2368921443-elite-rating-9.png"></div>
+<h5>Elite Rating</h5>
+<p class="hide-for-small-only">A top rating from ResellerRatings.com.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<div class="clear"></div>
+<footer class="footer">
+<div class="row">
+<div class="small-12 medium-4 large-2 columns customer-service">
+<h6>Customer Service</h6>
+<ul>
+<li><span>1 (855) 487-9678</span></li>
+<li><a href="https://www.itsworthmore.com/support">Support &amp; FAQ</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-2 columns about-us">
+<h6>About Us</h6>
+<ul>
+<li><a href="https://www.itsworthmore.com/about">About</a></li>
+<li><a href="https://www.itsworthmore.com/blog">Blog</a></li>
+<li><a href="https://www.itsworthmore.com/become-an-affiliate">Become an Affiliate</a></li>
+<li><a href="https://www.itsworthmore.com/itsworthmore-scholarship">Scholarship</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-3 columns connect-with-us">
+<h6>Connect With Us</h6>
+<ul>
+<li>
+<a href="https://www.instagram.com/itsworthmore" target="_blank" rel="noopener" lazy-class="insta" class="social lazy">Instagram</a>
+</li>
+<li>
+<a href="https://www.facebook.com/ItsWorthMore" target="_blank" rel="noopener" lazy-class="fb" class="social lazy">Facebook</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UC8aSe4JY7RUKEeHw3KVsIAA" target="_blank" rel="noopener" lazy-class="yt" class="social lazy">Youtube</a>
+</li>
+<li>
+<a href="https://twitter.com/itsworthmore" target="_blank" rel="noopener" lazy-class="twit" class="social lazy">Twitter</a>
+</li>
+</ul>
+</div>
+<div class="clear show-for-medium-only"></div>
+<div class="small-12 medium-8 medium-offset-2 large-5 large-offset-0 columns subscribe">
+<h6 class='hide-for-medium-only'>Subscribe</h6>
+<div class="form-wrap">
+<form method="POST" action="https://www.itsworthmore.com/widget/newsletter/subscribe" class="widget newsletter">
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row collapse">
+<div class="small-8 medium-10 columns">
+<input type="email" name="email" placeholder="Enter your email">
+</div>
+<div class="small-4 medium-2 columns">
+<input class="button postfix success" value="Go" type="submit">
+</div>
+</div>
+<span class="label success"></span>
+<div class="clear"></div>
+<span class="label alert"></span>
+<div class="clear"></div>
+<span>Sign up to receive news, tips, and offers.</span>
+</form>
+<hr>
+<a href="https://www.itsworthmore.com/privacy-policy">Privacy Policy</a>
+<span class='spacer'>|</span>
+<a href="https://www.itsworthmore.com/terms-and-conditions">Terms and Conditions</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="bottom">
+<div class="row">
+<div class="column small-12 medium-9">
+<p class="no-margin">
+&copy; 2019 Dollars4Devices.com &mdash; All Rights Reserved
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://www.itsworthmore.com/js/scripts-iwm.js?0bcc8f06"></script>
+<script>
+    
+    var baseUrl = 'https://www.itsworthmore.com';
+
+    
+    </script>
+</section>
+</body>

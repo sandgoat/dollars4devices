@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="">
+<meta name="robots" content="index,follow,archive" />
+<link rel="icon" type="image/png" href="" sizes="16x16" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="" />
+<title>Sell Your iPhone for the Most Cash | Dollars4Devices.com</title>
+<meta name="description" content="Sell your iPhone to Dollars4Devices.com for the Most Cash. Instant Quote. Free Shipping. Top Rated Service." />
+<meta name="keywords" content="sell your iphone, sell my iphone, sell iphone" />
+
+<link rel='stylesheet' type='text/css' href="./src/index.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+<style>.async-hide { opacity: 0 !important} </style>
+</head>
+<body class=" 1column">
+<section id="Dollars4Devices" ng-app="Dollars4Devices">
+<nav class="top-nav" role="navigation">
+<div class="row">
+<a href="https://www.Dollars4Devices.com" class="logo">
+<img src="" alt="Dollars4Devices logo">
+</a>
+<div class="hamburger show-for-medium-down">
+<i class="fi-list"></i>
+</div>
+<ul class="links show-for-large-up">
+<li class="trade-in">
+<a href="sell.html">Start Selling</a>
+<ul>
+<li>
+<a href="./sell/iphone.html" class='category-link'>
+Sell iPhone
+</a>
+</li>
+<li>
+<a href="./sell/samsung.html" class='category-link'>
+Sell Samsung
+</a>
+</li>
+<li>
+<a href="./sell/apple-watch.html" class='category-link'>
+Sell Apple Watch
+</a>
+</li>
+<li>
+<a href="./sell/macbook.html" class='category-link'>
+Sell MacBook
+</a>
+</li>
+<li>
+<a href="./sell/ipad.html" class='category-link'>
+Sell iPad
+</a>
+</li>
+<li>
+<a href="./sell/lg.html" class='category-link'>
+Sell LG
+</a>
+</li>
+<li>
+<a href="./sell/mac-mini.html" class='category-link'>
+Sell Mac Mini
+</a>
+</li>
+<li>
+<a href="./sell/htc.html" class='category-link'>
+Sell HTC
+</a>
+</li>
+<li>
+<a href="./sell/imac.html" class='category-link'>
+Sell iMac
+</a>
+</li>
+<li>
+<a href="" class='category-link'>
+Sell Mac Pro
+</a>
+</li>
+<li>
+<a href="" class='category-link'>
+Sell Surface Studio
+</a>
+</li>
+<li>
+<a href="./sell/surface.html" class='category-link'>
+Sell Surface
+</a>
+</li>
+</ul>
+</li>
+<li><a href="./support.html">Support</a></li>
+<li class="login">
+<a href="https://www.itsworthmore.com/account/login" class="show-login-modal">
+<span>Login</span>
+</a>
+</li>
+<li class='cart'>
+<a href="https://www.itsworthmore.com/sell/box">
+<div class="box">
+<span>
+0
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.84 30.09"><defs><style>.box-icon-class{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.84px;}</style></defs><title>box-icon</title><rect class="box-icon-class" x="0.92" y="0.92" width="32" height="6.98" rx="1.75" ry="1.75" /><rect class="box-icon-class" x="2.92" y="7.9" width="28" height="21.26" rx="1.75" ry="1.75" /></svg>
+</div>
+My Box
+<div class="hide-for-large-up">
+( 0 )
+</div>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id="login-modal" class="reveal-modal medium" data-reveal aria-hidden="true" role="dialog" style="display: none;">
+<h4 style='font-size: 1.7rem' class="text-center">Account Login</h4>
+<div class="login-form" ng-controller='login-form-ctrl' ng-class="{ 'is-loading' : formDisabled }" ng-init="init()" ng-cloak>
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row">
+<div class="small-12 columns">
+<small class="error" ng-show="errors.generic.length" ng-cloak>
+{{ errors.generic[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Email Address
+<input type="email" ng-model="email" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.email.length" ng-cloak>
+{{ errors.email[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<label>
+Password
+<input type="password" ng-model="password" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password.length" ng-cloak>
+{{ errors.password[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="small-12 columns">
+<label>
+Confirm Password
+<input type="password" ng-model="password_confirmation" ng-enter="postLogin()" value="">
+</label>
+<small class="error" ng-show="errors.password_confirmation.length" ng-cloak>
+{{ errors.password_confirmation[0] }}
+</small>
+</div>
+</div>
+<div class="row" ng-show="createAccount">
+<div class="columns small-12">
+<div vc-recaptcha key="'6LfUvjcUAAAAAGGWnojdvzU_OC2tL5681-HONvcN'" ng-model="recaptcha" on-create="recaptchaWidgetId = widgetId"></div>
+<br>
+<small class="error" ng-show="errors.recaptcha.length" ng-cloak>
+{{ errors.recaptcha[0] }}
+</small>
+</div>
+</div>
+<div class="row">
+<div class="small-12 columns">
+<p>
+<button ng-click="postLogin()" type="button" class="small success submnit-btn">
+{{ createAccount ? 'Create Account' : 'Login' }}
+</button>
+<span>or
+<a href="#" class="create-acc-toggle" ng-click="createAccount = !createAccount; $event.preventDefault()">
+{{ !createAccount ? 'create an account' : 'login to an existing account' }}
+</a>
+</span>
+<br>
+<a href="https://www.itsworthmore.com/account/forgot-password" class="forgot">
+Forgot Your Password?
+</a>
+</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="columns small-12">
+<p class="font-size-0-9">
+Or, login with:
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/google" class="primary-color">
+<i class="fi-social-google-plus"></i>&nbsp; Google
+</a>
+&nbsp;&nbsp;
+<a href="https://www.itsworthmore.com/account/social/facebook" class="primary-color">
+<i class="fi-social-facebook"></i>&nbsp; Facebook
+</a>
+</p>
+</div>
+</div>
+</div>
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div class="row">
+<div class="columns small-12">
+</div>
+</div>
+<h1 class="main-header">Terms &amp; Conditions</h1>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="row">
+<div class="columns main large-offset-2 large-8 medium-offset-1 medium-10 small-12 end">
+<ol>
+<li>
+<h2>Welcome to Dollars4Devices.com</h2>
+	<p>These terms and conditions outline the rules and regulations for the use of Dollars4Devices.com's Website.</p> <br /> 
+	<span style="text-transform: capitalize;"> Dollars4Devices.com</span> is located at:<br /> 
+	<address> , <br /> - , <br />
+	</address>
+	<p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use Dollars4Devices.com's website 
+	if you do not accept all of the terms and conditions stated on this page.</p>
+	<p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice
+	and any or all Agreements: “Client”, “You” and “Your” refers to you, the person accessing this website
+	and accepting the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers
+	to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves, or either the Client
+	or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake
+	the process of our assistance to the Client in the most appropriate manner, whether by formal meetings
+	of a fixed duration, or any other means, for the express purpose of meeting the Client’s needs in respect
+	of provision of the Company’s stated services/products, in accordance with and subject to, prevailing law
+	of . Any use of the above terminology or other words in the singular, plural,
+	capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p><h2>Cookies</h2>
+	<p>We employ the use of cookies. By using Dollars4Devices.com's website you consent to the use of cookies 
+	in accordance with Dollars4Devices.com’s privacy policy.</p><p>Most of the modern day interactive web sites
+	use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site
+	to enable the functionality of this area and ease of use for those people visiting. Some of our 
+	affiliate / advertising partners may also use cookies.</p><h2>License</h2>
+	<p>Unless otherwise stated, Dollars4Devices.com and/or it’s licensors own the intellectual property rights for
+	all material on Dollars4Devices.com. All intellectual property rights are reserved. You may view and/or print
+	pages from http://www.dollars4devices.com for your own personal use subject to restrictions set in these terms and conditions.</p>
+	<p>You must not:</p>
+	<ol>
+		<li>Republish material from http://www.dollars4devices.com</li>
+		<li>Sell, rent or sub-license material from http://www.dollars4devices.com</li>
+		<li>Reproduce, duplicate or copy material from http://www.dollars4devices.com</li>
+	</ol>
+	<p>Redistribute content from Dollars4Devices.com (unless content is specifically made for redistribution).</p>
+<h2>User Comments</h2>
+	<ol>
+		<li>This Agreement shall begin on the date hereof.</li>
+		<li>Certain parts of this website offer the opportunity for users to post and exchange opinions, information,
+		material and data ('Comments') in areas of the website. Dollars4Devices.com does not screen, edit, publish
+		or review Comments prior to their appearance on the website and Comments do not reflect the views or
+		opinions ofDollars4Devices.com, its agents or affiliates. Comments reflect the view and opinion of the
+		person who posts such view or opinion. To the extent permitted by applicable laws Dollars4Devices.comshall
+		not be responsible or liable for the Comments or for any loss cost, liability, damages or expenses caused
+		and or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this
+		website.</li>
+		<li>Dollars4Devices.comreserves the right to monitor all Comments and to remove any Comments which it considers
+		in its absolute discretion to be inappropriate, offensive or otherwise in breach of these Terms and Conditions.</li>
+		<li>You warrant and represent that:
+			<ol>
+				<li>You are entitled to post the Comments on our website and have all necessary licenses and consents to
+						do so;</li>
+				<li>The Comments do not infringe any intellectual property right, including without limitation copyright,
+					patent or trademark, or other proprietary right of any third party;</li>
+				<li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material
+					or material which is an invasion of privacy</li>
+				<li>The Comments will not be used to solicit or promote business or custom or present commercial activities
+					or unlawful activity.</li>
+				</ol>
+			</li>
+		<li>You hereby grant to <strong>Dollars4Devices.com</strong> a non-exclusive royalty-free license to use, reproduce,
+		edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats
+		or media.</li>
+	</ol>
+<h2>Hyperlinking to our Content</h2>
+	<ol>
+		<li>The following organizations may link to our Web site without prior written approval:
+			<ol>
+			<li>Government agencies;</li>
+			<li>Search engines;</li>
+			<li>News organizations;</li>
+			<li>Online directory distributors when they list us in the directory may link to our Web site in the same
+				manner as they hyperlink to the Web sites of other listed businesses; and</li>
+			<li>Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls,
+				and charity fundraising groups which may not hyperlink to our Web site.</li>
+			</ol>
+		</li>
+	</ol>
+	<ol start="2">
+		<li>These organizations may link to our home page, to publications or to other Web site information so long
+			as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or
+			approval of the linking party and its products or services; and (c) fits within the context of the linking
+			party's site.
+		</li>
+		<li>We may consider and approve in our sole discretion other link requests from the following types of organizations:
+			<ol>
+				<li>commonly-known consumer and/or business information sources such as Chambers of Commerce, American
+					Automobile Association, AARP and Consumers Union;</li>
+				<li>dot.com community sites;</li>
+				<li>associations or other groups representing charities, including charity giving sites,</li>
+				<li>online directory distributors;</li>
+				<li>internet portals;</li>
+				<li>accounting, law and consulting firms whose primary clients are businesses; and</li>
+				<li>educational institutions and trade associations.</li>
+			</ol>
+		</li>
+	</ol>
+	<p>We will approve link requests from these organizations if we determine that: (a) the link would not reflect
+	unfavorably on us or our accredited businesses (for example, trade associations or other organizations
+	representing inherently suspect types of business, such as work-at-home opportunities, shall not be allowed
+	to link); (b)the organization does not have an unsatisfactory record with us; (c) the benefit to us from
+	the visibility associated with the hyperlink outweighs the absence of <?=$companyName?>; and (d) where the
+	link is in the context of general resource information or is otherwise consistent with editorial content
+	in a newsletter or similar product furthering the mission of the organization.</p>
+
+	<p>These organizations may link to our home page, to publications or to other Web site information so long as
+	the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval
+	of the linking party and it products or services; and (c) fits within the context of the linking party's
+	site.</p>
+
+	<p>If you are among the organizations listed in paragraph 2 above and are interested in linking to our website,
+	you must notify us by sending an e-mail to <a href="mailto:ryan@bazaar.ly" title="send an email to ryan@bazaar.ly">ryan@bazaar.ly</a>.
+	Please include your name, your organization name, contact information (such as a phone number and/or e-mail
+	address) as well as the URL of your site, a list of any URLs from which you intend to link to our Web site,
+	and a list of the URL(s) on our site to which you would like to link. Allow 2-3 weeks for a response.</p>
+
+	<p>Approved organizations may hyperlink to our Web site as follows:</p>
+
+	<ol>
+		<li>By use of our corporate name; or</li>
+		<li>By use of the uniform resource locator (Web address) being linked to; or</li>
+		<li>By use of any other description of our Web site or material being linked to that makes sense within the
+			context and format of content on the linking party's site.</li>
+	</ol>
+	<p>No use of Dollars4Devices.com’s logo or other artwork will be allowed for linking absent a trademark license
+	agreement.</p>
+<h2>Iframes</h2>
+	<p>Without prior approval and express written permission, you may not create frames around our Web pages or
+	use other techniques that alter in any way the visual presentation or appearance of our Web site.</p>
+<h2>Reservation of Rights</h2>
+	<p>We reserve the right at any time and in its sole discretion to request that you remove all links or any particular
+	link to our Web site. You agree to immediately remove all links to our Web site upon such request. We also
+	reserve the right to amend these terms and conditions and its linking policy at any time. By continuing
+	to link to our Web site, you agree to be bound to and abide by these linking terms and conditions.</p>
+<h2>Removal of links from our website</h2>
+	<p>If you find any link on our Web site or any linked web site objectionable for any reason, you may contact
+	us about this. We will consider requests to remove links but will have no obligation to do so or to respond
+	directly to you.</p>
+	<p>Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its completeness
+	or accuracy; nor do we commit to ensuring that the website remains available or that the material on the
+	website is kept up to date.</p>
+<h2>Content Liability</h2>
+	<p>We shall have no responsibility or liability for any content appearing on your Web site. You agree to indemnify
+	and defend us against all claims arising out of or based upon your Website. No link(s) may appear on any
+	page on your Web site or within any context containing content or materials that may be interpreted as
+	libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or
+	other violation of, any third party rights.</p>
+<h2>Disclaimer</h2>
+	<p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill). Nothing in this disclaimer will:</p>
+	<ol>
+	<li>limit or exclude our or your liability for death or personal injury resulting from negligence;</li>
+	<li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+	<li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+	<li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+	</ol>
+	<p>The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer: (a)
+	are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer or
+	in relation to the subject matter of this disclaimer, including liabilities arising in contract, in tort
+	(including negligence) and for breach of statutory duty.</p>
+	<p>To the extent that the website and the information and services on the website are provided free of charge,
+	we will not be liable for any loss or damage of any nature.</p>
+<p>
+By engaging in business with us, by default, you have consented to our terms. If you DO NOT accept these terms then do not submit or send your electronic devices to Dollars4Devices.com (a Bazaarly LLC website), as this is a legally binding contract between Dollars4Devices.com (a Bazaarly LLC website) and you.
+</p>
+<p>Prices Will Change:</p>
+<ul>
+<li>
+<p>Battery Life: If the battery life of your gadget last short of what 60 minutes, we will modify the value as needs be to speak to a legitimately working gadget with a poor battery life.</p> 
+
+</li> 
+
+<li> 
+
+<p>Engraving: Any gadget got with an individual etching will be balanced in like manner. For the most part the gadget will be downsized by one tier.</p> 
+
+</li> 
+
+</ul> 
+
+</li> 
+
+<li> 
+
+<p>Incentive Program: To keep up our long haul association with our clients, we offer an impetus program in which we give you a set sum for every individual you allude us to. We send these installments out in mass toward the month's end to each of our dependable customers.</p> 
+
+</li> 
+
+<li> 
+
+The Process: 
+
+<ul> 
+
+<li> 
+
+<p>Shipping: Once you have delivered out your electronic device(s), if you don't mind permit up to five business days for them to get to us. This permits time for the delivery organization just as guaranteeing the gadgets are conveyed to our office.</p> 
+
+</li> 
+
+<li> 
+
+<p>Testing: Once we have gotten your electronic gadget(s) it takes a time of 48 hours for our team to examine the status of your gadget. In the event that you have sent us more than one item this may take up to double the measure of time. On the off chance that your gadget does exclude all the vital frill for testing, it would be ideal if you permit up to an extra five business days for testing.</p> 
+
+</li> 
+
+<li> 
+
+<p>Payment: After we have evaluated the status of your telephone we will send you your installment in the strategy you have chosen or send you another offer on the off chance that we feel that your electronic device(s) isn't in agreement to the condition you had initially chosen. You will have as long as seven days to acknowledge or decrease this offer. On the off chance that you DO NOT react inside the seven-day time span, we will expect you have acknowledged our terms, and send you your installment. It would be ideal if you permit up to five to seven days for handling. You generally can follow which phase of the procedure your device(s) are in from your Dollars4Devices account. It would be ideal if you note that on the off chance that you select PayPal, you will be in charge of the expense related with PayPal.&nbsp;</p> 
+
+</li> 
+
+<li> 
+
+<p>&nbsp;Larger Payments: If your request comprises of an estimation of a $1000.00 or more, it would be ideal if you enable an extra a few business day for processing.</p> 
+
+</li> 
+
+<li> 
+
+<p>Non-major CDMA: For PDA that have a bearer which isn't a CDMA telephone transporter, that is, NOT VERIZON, SPRINT, ALLTELL, your installment might be postponed for three to eight business days for extra preparing.</p>
+ </li>
+<li>
+<p>Battery Life: If the battery life of your gadget last short of what 60 minutes, we will modify the value as needs be to speak to a legitimately working gadget with a poor battery life.</p> 
+
+</li> 
+
+<li> 
+
+<p>Engraving: Any gadget got with an individual etching will be balanced in like manner. For the most part the gadget will be downsized by one tier.</p> 
+
+</li> 
+
+</ul> 
+
+</li> 
+
+<li> 
+
+<p>Incentive Program: To keep up our long haul association with our clients, we offer an impetus program in which we give you a set sum for every individual you allude us to. We send these installments out in mass toward the month's end to each of our dependable customers.</p> 
+
+</li> 
+
+<li> 
+
+The Process: 
+
+<ul> 
+
+<li> 
+
+<p>Shipping: Once you have delivered out your electronic device(s), if you don't mind permit up to five business days for them to get to us. This permits time for the delivery organization just as guaranteeing the gadgets are conveyed to our office.</p> 
+
+</li> 
+
+<li> 
+
+<p>Testing: Once we have gotten your electronic gadget(s) it takes a time of 48 hours for our team to examine the status of your gadget. In the event that you have sent us more than one item this may take up to double the measure of time. On the off chance that your gadget does exclude all the vital frill for testing, it would be ideal if you permit up to an extra five business days for testing.</p> 
+
+</li> 
+
+<li> 
+
+<p>Payment: After we have evaluated the status of your telephone we will send you your installment in the strategy you have chosen or send you another offer on the off chance that we feel that your electronic gadget(s) isn't in agreement to the condition you had initially chosen. You will have as long as seven days to acknowledge or decrease this offer. On the off chance that you DO NOT react inside the seven-day time span, we will expect you have acknowledged our terms, and send you your installment. It would be ideal if you permit up to five to seven days for handling. You generally can follow which phase of the procedure your gadget(s) are in from your Dollars4Devices account. It would be ideal if you note that on the off chance that you select PayPal, you will be in charge of the expense related with PayPal.&nbsp;</p> 
+
+</li> 
+
+<li> 
+
+<p>&nbsp;Larger Payments: If your request comprises of an estimation of a $1000.00 or more, it would be ideal if you enable an extra a few business day for processing.</p> 
+
+</li> 
+
+<li> 
+
+<p>Non-major CDMA: For PDA that have a bearer which isn't a CDMA telephone transporter, that is, NOT VERIZON, SPRINT, ALLTELL, your installment might be postponed for three to eight business days for extra preparing.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Returns: If we give you another offer in light of the fact that our team feels as if your very own evaluation of your gadget is mistaken, and you decrease the new offer, we will restore your electronic gadget to you for nothing. On the off chance that your request has various things, we will just restore the thing that we have sent another offer for. The rest of the things can't be returned regardless of whether you feel that the new offer for the other thing was incorrect. If you don't mind note that in the event that you don't react to our email in regards to the new offer inside seven days we will proceed with the preparing. In the event that your thing has NO VALUE in understanding to our appraisal and you don't react to our messages inside the seven days, WE WILL RECYCLE your gadget. So as to test your gadget(s), our Technical Specialists do evacuate packaging and the defensive layers of your gadget. On the off chance that amid this procedure you request your gadget(s) back please note that Dollars4Devices.com isn't in charge of these things. When an item has been sent to us we don't ensure that we will restore the item or any information that you wish to hold back to us, except if this is on the grounds that you have decided to not acknowledge our new offer. Kindly note that free return shipping does not matter in the accompanying situations:</p>
+<ul>
+<li>
+<p>Device was essentially misrepresented.</p> 
+</li> 
+<li> 
+<p>Device was observed to be accounted for lost or stolen.</p> 
+</li> 
+<li> 
+<p>Device was found to have an Activation or iCloud lock.</p> 
+</li> 
+<li> 
+<p>Device was found to have a terrible ESN or IMEI that's financed.</p>
+</ul>
+</li>
+<li>
+<p>Maltreatment of Dollars4Devices.com: We comprehend that you may not be sure of the accurate state of your item and this is the reason we urge you to get in touch with us with your inquiries. We don't care for experiencing the way toward giving you another offer as it might every so often lead to client disappointment. We do however in any case, need you to answer the straightforward inquiries in the most legitimate and exact way that could be available. For the most part things that are to a great extent distorted with significant disparities are viewed as maltreatment of our administration and are NOT secured under our Free Return Policy when a balanced offer is declined because of reasons, for example, an awful ESN, iCloud/Activation bolts, lost or stolen telephones, or gross deception of an item(s).</p>
+<p>Dollars4Devices.com has the right to decide if our framework has been mishandled in any capacity. We won't take into account evident blunders to happen without results to the client of our framework. If so, we won't take into consideration free dispatching of your electronic gadget(s) back to you on the off chance that you ask for this. The CUSTOMER will be in charge of paying for shipment of their thing back to them just as the expense brought about by us using our prepaid delivery mark.</p>
+</li>
+<li>
+<p>Damage or Loss in Mail: If your electronic gadget(s) have either been harmed or lost while they are in travel, we at Dollars4Devices.com will do our best to help locate the fitting goals for you as an esteemed client. For INCOMING mail, we protect the majority of the bundles. In the event that when transporting out the thing, it isn't filtered referencing the point in which it was gotten by the transporter, we are not dependable if the thing does not make it to us. In the event that the bundle isn't legitimately bundled and there are harms that jump out at the electronic device(s), we are not in charge of these harms. The absence of "appropriate pressing" incorporate yet are not constrained to an unpadded or unlocked box or envelope or insufficient cushioning to keep the electronic device(s) secure inside the bundle. The estimation of any electronic gadget(s) that are deficiently bundled won't be repaid. In the event that you have questions in regards to how to bundle your thing please talk about your worries with a nearby delivering advisor. For OUTGOING mail, we guarantee this at the sum that we locate the electronic device(s) to be esteemed at. In the event that we have given you another offer, the guaranteed sum will meet this offer regardless of whether you have not verbally acknowledged these terms. For all protection claims, client must almost certainly show confirmation of procurement and be eager to find a way to fulfill data prerequisites required for the case.</p>
+</li>
+<li>
+<p>Client Representation: By taking part in business with us and sending us your electronic gadget(s) you are speaking to yourself as somebody who is 18 years or more established, the proprietor of the thing you are sending to us and concurring that no other individual or gathering has any rights towards this thing. You have the lawful specialist to exchange the responsibility for the gadget to us with no preventions. You are additionally consenting that the gadget you are sending to us isn't stolen. Things that are stolen, phony, or fake, will be swung over to government specialists. We have ZERO resistance for such things. These things won't be sent back to you as it is viewed as mail misrepresentation. These things will be promptly annihilated and reused. In the event that you have questions in regards to the authenticity of your item, kindly don't delay to get in touch with us PRIOR to sending the thing to us.</p>
+</li>
+<li>
+<p>Inaccurate Information: If your thing touches base without the right data or without the suitable bundle receipt or return marks we will monitor your thing, and pay you the sum on the site that corresponds with the receipt we have on record. In the wake of testing your thing on the off chance that we find that the cost is extraordinary, we will pay you the new sum, on the off chance that we can coordinate the thing to the said proprietor. Since we don't have the correct return data, this cost is conclusive on the off chance that we can coordinate you to your data. So as to stay away from every one of these complexities please ensure the fitting data is dispatched out alongside your electronic gadget(s).</p>
+</li>
+<li>
+<p>Legal Disputes:&nbsp; ALL legal disputes will be handled through Arbitration WITH NO ATTORNEYS.</p>
+</li>
+<li>
+</ol>
+</div>
+</div>
+<footer class="footer">
+<div class="row">
+<div class="small-12 medium-4 large-2 columns customer-service">
+<h6>Customer Service</h6>
+<ul>
+<li><span>1 (855) 487-9678</span></li>
+<li><a href="https://www.itsworthmore.com/support">Support &amp; FAQ</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-2 columns about-us">
+<h6>About Us</h6>
+<ul>
+<li><a href="https://www.itsworthmore.com/about">About</a></li>
+<li><a href="https://www.itsworthmore.com/blog">Blog</a></li>
+<li><a href="https://www.itsworthmore.com/become-an-affiliate">Become an Affiliate</a></li>
+<li><a href="https://www.itsworthmore.com/itsworthmore-scholarship">Scholarship</a></li>
+</ul>
+</div>
+<div class="small-12 medium-4 large-3 columns connect-with-us">
+<h6>Connect With Us</h6>
+<ul>
+<li>
+<a href="https://www.instagram.com/itsworthmore" target="_blank" rel="noopener" lazy-class="insta" class="social lazy">Instagram</a>
+</li>
+<li>
+<a href="https://www.facebook.com/ItsWorthMore" target="_blank" rel="noopener" lazy-class="fb" class="social lazy">Facebook</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UC8aSe4JY7RUKEeHw3KVsIAA" target="_blank" rel="noopener" lazy-class="yt" class="social lazy">Youtube</a>
+</li>
+<li>
+<a href="https://twitter.com/itsworthmore" target="_blank" rel="noopener" lazy-class="twit" class="social lazy">Twitter</a>
+</li>
+</ul>
+</div>
+<div class="clear show-for-medium-only"></div>
+<div class="small-12 medium-8 medium-offset-2 large-5 large-offset-0 columns subscribe">
+<h6 class='hide-for-medium-only'>Subscribe</h6>
+<div class="form-wrap">
+<form method="POST" action="https://www.itsworthmore.com/widget/newsletter/subscribe" class="widget newsletter">
+<input type="hidden" name="_token" value="EiJpUJUmGpFZOPhrvMSOa9z30pSA3L8AGj5g3FP5">
+<div class="row collapse">
+<div class="small-8 medium-10 columns">
+<input type="email" name="email" placeholder="Enter your email">
+</div>
+<div class="small-4 medium-2 columns">
+<input class="button postfix success" value="Go" type="submit">
+</div>
+</div>
+<span class="label success"></span>
+<div class="clear"></div>
+<span class="label alert"></span>
+<div class="clear"></div>
+<span>Sign up to receive news, tips, and offers.</span>
+</form>
+<hr>
+<a href="https://www.itsworthmore.com/privacy-policy">Privacy Policy</a>
+<span class='spacer'>|</span>
+<a href="./terms-and-conditions.html">Terms and Conditions</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="bottom">
+<div class="row">
+<div class="column small-12 medium-9">
+<p class="no-margin">
+&copy; 2019 Dollars4Devices.com &mdash; All Rights Reserved
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="./src/foundation.js"></script>
+<script>
+    
+    var baseUrl = 'https://www.Dollars4Devices.com';
+
+    
+    </script>
+</section>
+</body>
